@@ -1,25 +1,27 @@
 <div align="center">
   <h1>Authora</h1>
   <p><strong>Modern, Multi-Tenant Identity Provider</strong></p>
-
+</div>
 
 ---
 
 ## 📸 Ekran Görüntüleri
 
->![img.png](img.png) ![img_1.png](img_1.png)
+> 
+![img_2.png](img_2.png)
 
+![img_3.png](img_3.png)
 ---
 
-## 🚀 Nedir?
+##  Nedir?
 
 Authora, şirketlerin ve bireysel geliştiricilerin kendi uygulamalarına kolayca kimlik doğrulama entegre etmelerine olanak tanıyan açık kaynaklı bir **Identity Provider (IDP)** platformudur.
 
-Auth0, Okta gibi servislere alternatif olarak tasarlanmış olan Authora, **OAuth2 / OpenID Connect** protokollerini destekler ve çok kiracılı bir mimariyle çalışır.
+Auth0, Okta gibi servislere alternatif olarak tasarlanmış olan Authora, **OAuth2 / OpenID Connect** protokollerini destekler ve çok kiracılı (multi-tenant) bir mimariyle çalışır.
 
 ---
 
-## ✨ Özellikler
+##  Özellikler
 
 - 🔐 **OAuth2 & OpenID Connect** — Authorization Code Flow desteği
 - 📱 **Çoklu Uygulama** — Bir tenant altında birden fazla uygulama
@@ -31,7 +33,7 @@ Auth0, Okta gibi servislere alternatif olarak tasarlanmış olan Authora, **OAut
 
 ---
 
-## 🏗️ Mimari
+##  Mimari
 
 ```
 ┌─────────────────────────────────────────────────────┐
@@ -274,3 +276,12 @@ tenants
 | `POST /api/tenant/onboarding` | Onboarding tamamla |
 
 ---
+
+## 🤝 Katkıda Bulunma
+
+1. Fork'la
+2. Feature branch oluştur (`git checkout -b feature/yeni-ozellik`)
+3. Commit'le (`git commit -m 'feat: yeni özellik eklendi'`)
+4. Push'la (`git push origin feature/yeni-ozellik`)
+5. Pull Request aç
+
