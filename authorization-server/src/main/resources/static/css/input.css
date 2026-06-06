@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Geist";
+    src: url(/fonts/geist.woff2) format("woff2");
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+body {
+    font-family: "Geist", sans-serif;
+    background: url(/images/72832484_fuyt2.svg) no-repeat;
+    background-size: cover;
+}

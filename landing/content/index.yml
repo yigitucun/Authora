@@ -1,0 +1,139 @@
+seo:
+  title: Modern Identity & Access Management | Authora
+  description: Uygulamalarınız için uçtan uca kimlik ve yetki yönetimi. OAuth2 ve OpenID Connect standartlarıyla milisaniyeler içinde entegre olun.
+title: "Güvenliği bize bırakın.\nSiz sadece kodlayın."
+description: Authora ile SSO, rol bazlı yetkilendirme ve güvenlik altyapısını API ile dakikalar içinde entegre edin.
+hero:
+  headline: "Authora v1.0.0-beta"
+  links:
+    - label: Ücretsiz Başla
+      color: primary
+      size: xl
+      to: 'http://localhost:3000/login'
+    - label: Dokümanları İncele
+      size: xl
+      color: neutral
+      variant: soft
+      to: '#'
+terminal:
+  lines:
+    - segments:
+        - text: "$ "
+          style: prompt
+        - text: "curl "
+          style: cmd
+        - text: "-X POST "
+          style: flag
+        - text: "https://api.authora.local/oauth2/token \\"
+          style: url
+    - segments:
+        - text: "  -d "
+          style: flag
+        - text: '"grant_type=client_credentials" \\'
+          style: string
+    - segments:
+        - text: "  -u "
+          style: flag
+        - text: '"authora:secret_key"'
+          style: string
+    - segments:
+        - text: "→ Authenticating client..."
+          style: dim
+    - segments:
+        - text: "✓ 200 OK "
+          style: success
+        - text: "(12ms)"
+          style: metric-good
+    - segments:
+        - text: "{"
+          style: dim
+    - segments:
+        - text: '  "access_token": '
+          style: dim
+        - text: '"eyJhbGciOiJSUzI1NiIs..."'
+          style: success
+        - text: ","
+          style: dim
+    - segments:
+        - text: '  "expires_in": '
+          style: dim
+        - text: "3600"
+          style: cmd
+    - segments:
+        - text: "}"
+          style: dim
+logos:
+  title: Modern mİmarİlerle tam uyumlu
+  items:
+    - i-simple-icons-nodedotjs
+    - i-simple-icons-spring
+    - i-simple-icons-nuxtdotjs
+    - i-simple-icons-vuedotjs
+    - i-simple-icons-react
+features:
+  headline: Özellİkler
+  title: "Kimlik yönetimi için gereken her şey."
+  description: Kullanıcılarınızı yönetmek ve API'lerinizi korumak için tasarlanmış kurumsal seviyede araç seti.
+  items:
+    - icon: i-lucide-key
+      title: Single Sign-On (SSO)
+      description: Kullanıcılarınızın her uygulama için ayrı şifre ezberleme derdine son verin. Tek bir merkezi kimlik ile tüm kurumsal ekosisteminize kesintisiz, hızlı ve güvenli bir erişim deneyimi sağlayın.
+    - icon: i-lucide-shield-check
+      title: OAuth2 & OpenID Connect
+      description: Altyapınızı sektörün altın standartları olan güncel protokollerle güvence altına alın. Dış dünya ile olan entegrasyonlarınızı küresel güvenlik normlarına uygun, eksiksiz bir şekilde yapılandırın.
+    - icon: i-lucide-users
+      title: Rol Bazlı Erişim (RBAC)
+      description: Kullanıcı yetkilerini ve API erişim sınırlarını mikro düzeyde belirleyin. Hangi departmanın veya kullanıcının hangi verilere ulaşabileceğini detaylı kurallarla, kusursuzca kontrol edin.
+    - icon: i-lucide-scan-face
+      title: Multi-Factor Auth (MFA)
+      description: Sadece şifre yetmez. SMS doğrulama, E-posta onayları veya Authenticator entegrasyonları ile hesap güvenlik duvarlarınızı aşılmaz kılın ve yetkisiz erişim girişimlerini ikinci katmanda kesin olarak engelleyin.
+    - icon: i-lucide-activity
+      title: Gerçek Zamanlı Audit Log
+      description: Sisteminizde gerçekleşen her bir işlemi kayıt altına alın. Başarılı girişleri, şüpheli aktiviteleri ve yetkisiz erişim denemelerini saniyesi saniyesine izleyip, detaylı güvenlik raporları oluşturun.
+    - icon: i-lucide-palette
+      title: Özelleştirilebilir Arayüz
+      description: Kurumsal kimliğinizden ödün vermeyin. Müşterilerinizin karşısına çıkan giriş ve kayıt ekranlarını, tek satır kod yazmanıza gerek kalmadan kendi markanızın renklerine göre dakikalar içinde tamamen özelleştirin.
+
+metrics:
+  headline: Rakamlarla Authora
+  title: "Yüksek trafikli sistemler için tasarlandı."
+  description: Milyonlarca isteği saniyeler içinde doğrula. Kesinti yok, gecikme yok, uzlaşma yok.
+
+  items:
+    - value: "99.99%"
+      label: Uptime SLA
+      class: "text-success"
+    - value: "<15ms"
+      label: Ortalama Yanıt
+      class: "text-primary"
+    - value: "10K+"
+      label: Saniyelik İstek
+      class: "text-info"
+    - value: "Sıfır"
+      label: Güvenlik İhlali
+      class: "text-warning"
+cta:
+  title: "Auth sistemini baştan\nyazmayı bırakın."
+  description: Dakikalar içinde entegre olun. Üstelik geliştirici ortamı tamamen ücretsiz.
+  links:
+    - label: Ücretsiz Hesap Oluştur
+      color: primary
+      to: '#'
+
+faq:
+  headline: FAQ
+  title: "Sıkça Sorulan Sorular"
+  description: "Authora entegrasyonu, mimarisi ve güvenlik standartları hakkında en çok merak edilenler."
+  items:
+    - label: "Sisteme entegre olmak ne kadar sürer?"
+      content: "Gelişmiş API'miz ve hazır kütüphanelerimiz sayesinde haftalar süren kimlik doğrulama altyapısı kurma işini dakikalara indiriyoruz. Sadece Client ID ve Secret Key bilgilerinizi alıp hemen kodlamaya başlayabilirsiniz."
+    - label: "Müşteri verileri nerede ve nasıl tutuluyor?"
+      content: "Verileriniz KVKK ve GDPR standartlarına %100 uygun olarak şifrelenmiş (encrypted) veritabanlarında tutulur. Dileyen Enterprise müşterilerimiz sistemi kendi sunucularında (On-Premise) barındırabilir."
+    - label: "Hangi güvenlik protokollerini destekliyorsunuz?"
+      content: "Sektörün en güncel ve kabul görmüş standartları olan OAuth 2.0, OpenID Connect (OIDC) ve SAML 2.0 protokollerini tam ve eksiksiz olarak destekliyoruz."
+    - label: "Giriş ekranlarının tasarımına müdahale edebilir miyim?"
+      content: "Kesinlikle. Panelinizi kullanarak giriş, kayıt ve şifre sıfırlama ekranlarını kendi markanızın renkleri, logoları ve fontları ile tamamen özelleştirebilirsiniz."
+    - label: "Yüksek trafik anlarında sistem çöker mi?"
+      content: "Hayır. Arkada çalışan olay-güdümlü (event-driven) mimari ve dağıtık kuyruk sistemleri sayesinde, saniyede on binlerce giriş isteği gelse bile sisteminiz yavaşlamaz veya çökmez. SLA oranımız %99.99'dur."
+    - label: "Geliştirici ortamı gerçekten ücretsiz mi?"
+      content: "Evet. Sistemi test etmeniz, kendi projelerinize entegre etmeniz ve sınırları zorlamanız için 5.000 aktif kullanıcıya kadar olan Geliştirici Planı tamamen ücretsizdir ve kredi kartı gerektirmez."

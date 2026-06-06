@@ -1,0 +1,60 @@
+spring:
+  application:
+    name: authorization-server
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ${MAIL_USERNAME}
+    password: ${MAIL_PASSWORD}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+  kafka:
+    admin:
+      fail-fast: false
+    bootstrap-servers: localhost:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+    consumer:
+      group-id: authora-authorization-server
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: "com.authora.authorization.**"
+
+  main:
+    banner-mode: off
+  datasource:
+    username: ${DB_PGSQL_USERNAME}
+    password: ${DB_PGSQL_PASSWORD}
+    url: jdbc:postgresql://localhost:5432/authora
+    driver-class-name: org.postgresql.Driver
+  threads:
+    virtual:
+      enabled: true
+  freemarker:
+    suffix: .ftl
+  flyway:
+    baseline-on-migrate: true
+    locations: classpath:db/migration
+logging:
+  level:
+    root: error
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  type-handlers-package: com.authora.authorization.server.common.typehandler
+
+app:
+  callback-url: http://localhost:3000/api/auth/callback/authora
+  client-secret: ${CLIENT_SECRET}
+  master-tenant-id: 00000000-0000-0000-0000-000000000001
+  public-base-url: http://localhost:8080
+  email-verification-ttl-minutes: 30
+
